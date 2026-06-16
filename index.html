@@ -586,6 +586,60 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation: none !important; transition: none !important; }
     }
+
+    @media (max-width: 768px) {
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 5%;
+    gap: 32px;
+  }
+
+  #sobre > div:first-child {
+    order: 1;
+  }
+
+  .sobre-image-side {
+    order: 2;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .sobre-img-box {
+    grid-column: 1 / -1;
+    padding-bottom: 80%;
+    border-radius: 28px;
+  }
+
+  .sobre-card-float,
+  .lgbtq-badge {
+    position: static;
+    inset: auto;
+    transform: none;
+    width: 100%;
+    min-height: 96px;
+    border-radius: 18px;
+  }
+
+  .sobre-card-float {
+    padding: 18px 20px;
+  }
+
+  .lgbtq-badge {
+    padding: 14px 16px;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 2.05rem;
+    line-height: 1.15;
+  }
+}
   </style>
 </head>
 <body>
