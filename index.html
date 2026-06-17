@@ -3,24 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clínica Veterinária Pintas & Patas – Sombrio SC</title>
+  <title>Pintas & Patas | Clínica Veterinária em Sombrio – SC</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Clínica veterinária em Sombrio – SC com consultas, cirurgias, vacinação e banho & tosa. Nota 4,5 no Google com mais de 199 avaliações. Agende pelo WhatsApp." />
+  <meta name="keywords" content="veterinário Sombrio, clínica veterinária Sombrio SC, banho e tosa Sombrio, vacina cachorro gato Sombrio, Pintas e Patas" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pintasepatas.com.br/" />
+
+  <!-- Open Graph / WhatsApp / Facebook preview -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Pintas & Patas | Clínica Veterinária em Sombrio – SC" />
+  <meta property="og:description" content="Cuidado clínico, cirúrgico e banho & tosa para o seu pet. Nota 4,5 no Google com mais de 199 avaliações." />
+  <meta property="og:url" content="https://pintasepatas.com.br/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://cdn-b.heylink.me/media/users/og_image/dc2acb9c645848638990bb0c04fac2da.webp" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pintas & Patas | Clínica Veterinária em Sombrio – SC" />
+  <meta name="twitter:description" content="Consultas, cirurgias, vacinação e banho & tosa. Agende pelo WhatsApp." />
+
+  <!-- Favicon (pata como emoji via data URI, sem dependências externas) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Dados estruturados para Google (LocalBusiness / Veterinary Care) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Pintas & Patas - Clínica Veterinária",
+    "image": "https://cdn-b.heylink.me/media/users/og_image/dc2acb9c645848638990bb0c04fac2da.webp",
+    "telephone": "+5548999957471",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tv. Serafim Alves Pereira, 108",
+      "addressLocality": "Sombrio",
+      "addressRegion": "SC",
+      "postalCode": "88960-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -29.1147,
+      "longitude": -49.6286
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:30",
+        "closes": "18:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "199"
+    },
+    "sameAs": [
+      "https://www.instagram.com/cvpintasepatas/",
+      "https://www.tiktok.com/@pintasepatas",
+      "https://www.youtube.com/channel/UCuUZlEySoenNKzlbTcosiHA"
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --verde:     #2D5016;
-      --verde-med: #3D6B1F;
-      --verde-cl:  #8BBF5A;
-      --bege:      #F5EDD8;
-      --bege-esc:  #EAE0C8;
-      --coral:     #E8734A;
-      --coral-cl:  #F2A07E;
-      --branco:    #FAFAF7;
-      --cinza:     #1A1A1A;
-      --cinza-med: #555;
+      --verde:     #6B4FA0;   /* roxo vibrante (cor de marca, base escura) */
+      --verde-med: #7D5FB5;   /* roxo médio (hover sobre roxo) */
+      --verde-cl:  #B89EDC;   /* roxo claro (detalhes sobre fundo escuro) */
+      --bege:      #F3EEFA;   /* lilás bem claro (fundo de seção alternada) */
+      --bege-esc:  #E4D9F2;   /* lilás claro escurecido (bordas/divisores) */
+      --coral:     #9CCB3B;   /* verde-limão vibrante (CTA / destaque) */
+      --coral-cl:  #C3E07A;   /* verde-limão claro (detalhes sobre fundo escuro) */
+      --branco:    #FFFDF9;
+      --cinza:     #2B2230;
+      --cinza-med: #6B6275;
       --r-lg:      24px;
       --r-xl:      48px;
     }
@@ -28,10 +95,17 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito', sans-serif;
       background: var(--branco);
       color: var(--cinza);
       overflow-x: hidden;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 3px;
+      border-radius: 4px;
     }
 
     /* ─── NAVBAR ─── */
@@ -44,11 +118,12 @@
       border-bottom: 1px solid var(--bege-esc);
       transition: box-shadow .3s;
     }
-    nav.scrolled { box-shadow: 0 2px 20px rgba(45,80,22,.10); }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(107,79,160,.12); }
 
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none;
+      z-index: 110;
     }
     .nav-logo-icon {
       width: 40px; height: 40px;
@@ -58,7 +133,7 @@
       font-size: 20px;
     }
     .nav-logo-text {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 1.1rem; font-weight: 700;
       color: var(--verde);
       line-height: 1.1;
@@ -76,16 +151,50 @@
     .nav-links a:hover { color: var(--verde); }
 
     .nav-cta {
-      background: var(--coral); color: #fff;
+      background: var(--coral); color: var(--cinza);
       border: none; border-radius: 50px;
-      padding: 10px 24px; font-size: .88rem; font-weight: 600;
+      padding: 10px 24px; font-size: .88rem; font-weight: 700;
       cursor: pointer; text-decoration: none;
       transition: background .2s, transform .15s;
     }
-    .nav-cta:hover { background: var(--verde); transform: translateY(-1px); }
+    .nav-cta:hover { background: var(--verde); color: #fff; transform: translateY(-1px); }
 
-    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
-    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--cinza); margin: 5px 0; border-radius: 2px; transition: .3s; }
+    .nav-hamburger {
+      display: none; background: none; border: none; cursor: pointer; padding: 6px;
+      z-index: 110;
+    }
+    .nav-hamburger span {
+      display: block; width: 24px; height: 2px; background: var(--cinza); margin: 5px 0; border-radius: 2px;
+      transition: transform .3s, opacity .3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Menu mobile (drawer) */
+    .mobile-menu {
+      position: fixed; top: 0; right: 0;
+      width: min(78vw, 320px); height: 100vh;
+      background: var(--verde);
+      z-index: 105;
+      padding: 100px 32px 40px;
+      display: flex; flex-direction: column; gap: 28px;
+      transform: translateX(100%);
+      transition: transform .35s ease;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-menu a {
+      color: #fff; text-decoration: none;
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 1.3rem; font-weight: 600;
+    }
+    .mobile-menu .nav-cta { align-self: flex-start; margin-top: 8px; }
+    .menu-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,.45);
+      z-index: 104; opacity: 0; pointer-events: none;
+      transition: opacity .3s;
+    }
+    .menu-overlay.open { opacity: 1; pointer-events: auto; }
 
     /* ─── HERO ─── */
     #hero {
@@ -123,7 +232,7 @@
     }
 
     .hero-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: clamp(2.6rem, 5vw, 4.2rem);
       font-weight: 700;
       color: #fff;
@@ -142,14 +251,14 @@
     .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
     .btn-primary {
-      background: var(--coral); color: #fff;
+      background: var(--coral); color: var(--cinza);
       border: none; border-radius: 50px;
-      padding: 15px 32px; font-size: .95rem; font-weight: 600;
+      padding: 15px 32px; font-size: .95rem; font-weight: 700;
       cursor: pointer; text-decoration: none;
       display: inline-flex; align-items: center; gap: 8px;
       transition: background .2s, transform .15s, box-shadow .2s;
     }
-    .btn-primary:hover { background: #d15c38; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,115,74,.4); }
+    .btn-primary:hover { background: #82AE2A; color: var(--cinza); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(156,203,59,.4); }
 
     .btn-secondary {
       background: transparent; color: #fff;
@@ -169,7 +278,7 @@
       border-top: 1px solid rgba(255,255,255,.15);
     }
     .stat-num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 2rem; font-weight: 700; color: #fff;
     }
     .stat-num span { color: var(--coral-cl); }
@@ -201,7 +310,7 @@
       50% { transform: translateY(-10px); }
     }
     .hero-card-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 1.5rem; font-weight: 700; color: #fff;
       text-align: center; margin-bottom: 24px;
     }
@@ -239,7 +348,7 @@
       margin-bottom: 14px;
     }
     .section-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: clamp(1.9rem, 3.5vw, 2.8rem);
       font-weight: 700; line-height: 1.18;
       margin-bottom: 20px;
@@ -262,11 +371,17 @@
       display: flex; align-items: center; gap: 6px;
     }
 
-    .sobre-image-side { position: relative; }
+    .sobre-image-side {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 0 28px 28px 28px;
+    }
     .sobre-img-box {
       background: var(--verde);
       border-radius: var(--r-xl);
-      width: 100%; padding-bottom: 110%;
+      width: 100%; aspect-ratio: 1 / 1;
       position: relative; overflow: hidden;
       display: flex; align-items: center; justify-content: center;
     }
@@ -287,23 +402,25 @@
     .emoji-cell:nth-child(4) { animation-delay: 2.4s; }
 
     .sobre-card-float {
-      position: absolute; bottom: -20px; right: -20px;
-      background: var(--coral); color: #fff;
-      border-radius: 20px; padding: 20px 24px;
-      box-shadow: 0 12px 40px rgba(232,115,74,.35);
+      position: absolute; bottom: 0; right: 0;
+      background: var(--coral); color: var(--cinza);
+      border-radius: 20px; padding: 18px 22px;
+      box-shadow: 0 12px 40px rgba(156,203,59,.4);
+      max-width: 70%;
     }
     .scf-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem; font-weight: 700;
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 1.8rem; font-weight: 700;
     }
-    .scf-label { font-size: .78rem; opacity: .85; margin-top: 2px; }
+    .scf-label { font-size: .76rem; opacity: .85; margin-top: 2px; }
 
     .lgbtq-badge {
-      position: absolute; top: 20px; left: -20px;
+      position: absolute; top: 16px; left: 0;
       background: #fff; border-radius: 14px;
       padding: 12px 16px; font-size: .78rem; font-weight: 600;
       color: var(--cinza); box-shadow: 0 4px 20px rgba(0,0,0,.1);
       display: flex; align-items: center; gap: 8px;
+      max-width: 70%;
     }
 
     /* ─── SERVIÇOS ─── */
@@ -337,21 +454,18 @@
       transform: scaleX(0); transform-origin: left;
       transition: transform .3s;
     }
-    .svc-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(45,80,22,.12); }
+    .svc-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(107,79,160,.22); }
     .svc-card:hover::before { transform: scaleX(1); }
-    .svc-card.featured { background: var(--verde); }
-    .svc-card.featured .svc-title,
-    .svc-card.featured .svc-desc { color: #fff; }
-    .svc-card.featured .svc-desc { opacity: .75; }
-    .svc-card.featured::before { background: var(--coral-cl); }
+    .svc-card { background: var(--verde); }
+    .svc-card::before { background: var(--coral-cl); }
 
     .svc-icon { font-size: 2.4rem; margin-bottom: 18px; display: block; }
     .svc-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 1.25rem; font-weight: 700;
-      color: var(--cinza); margin-bottom: 10px;
+      color: #fff; margin-bottom: 10px;
     }
-    .svc-desc { font-size: .9rem; line-height: 1.7; color: var(--cinza-med); }
+    .svc-desc { font-size: .9rem; line-height: 1.7; color: rgba(255,255,255,.78); }
 
     /* ─── AVALIAÇÕES ─── */
     #avaliacoes {
@@ -397,7 +511,7 @@
       margin-bottom: 48px;
     }
     .rating-big {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 5rem; font-weight: 700; color: #fff; line-height: 1;
     }
     .rating-right .stars { color: #F9C74F; font-size: 1.4rem; letter-spacing: 3px; }
@@ -429,12 +543,39 @@
       font-size: 2.2rem;
     }
     .team-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 1.1rem; font-weight: 700; color: var(--cinza);
       margin-bottom: 4px;
     }
     .team-role { font-size: .82rem; color: var(--coral); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
     .team-bio { font-size: .85rem; color: var(--cinza-med); line-height: 1.6; margin-top: 12px; }
+
+    /* ─── SOCIAL (novo) ─── */
+    #social {
+      padding: 72px 5%;
+      background: var(--branco);
+      text-align: center;
+    }
+    .social-row {
+      display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .social-chip {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--bege);
+      border: 1.5px solid var(--bege-esc);
+      border-radius: 50px;
+      padding: 12px 22px;
+      font-size: .9rem; font-weight: 600; color: var(--cinza);
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .social-chip:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(107,79,160,.14);
+      background: #fff;
+    }
+    .social-chip .ic { font-size: 1.2rem; }
 
     /* ─── CONTATO ─── */
     #contato {
@@ -497,26 +638,24 @@
 
     /* ─── MAPA ─── */
     #mapa {
-      height: 340px;
+      height: 400px;
       background: var(--bege-esc);
       position: relative; overflow: hidden;
     }
-    .mapa-placeholder {
-      width: 100%; height: 100%;
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 12px;
-      background: linear-gradient(135deg, var(--bege) 0%, var(--bege-esc) 100%);
+    #mapa iframe {
+      width: 100%; height: 100%; border: 0; display: block;
     }
-    .mapa-pin { font-size: 3rem; }
-    .mapa-address { font-size: .95rem; color: var(--cinza-med); text-align: center; }
-    .mapa-link {
+    .mapa-overlay-link {
+      position: absolute; bottom: 18px; left: 50%;
+      transform: translateX(-50%);
       background: var(--verde); color: #fff;
       text-decoration: none; border-radius: 50px;
-      padding: 10px 22px; font-size: .85rem; font-weight: 600;
-      margin-top: 6px;
-      transition: background .2s;
+      padding: 12px 26px; font-size: .88rem; font-weight: 600;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+      transition: background .2s, transform .2s;
+      display: inline-flex; align-items: center; gap: 8px;
     }
-    .mapa-link:hover { background: var(--verde-med); }
+    .mapa-overlay-link:hover { background: var(--verde-med); transform: translateX(-50%) translateY(-2px); }
 
     /* ─── FOOTER ─── */
     footer {
@@ -530,7 +669,7 @@
       margin-bottom: 32px;
     }
     .footer-brand-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Baloo 2', sans-serif;
       font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 10px;
     }
     .footer-brand-name span { color: var(--coral-cl); }
@@ -550,7 +689,7 @@
 
     /* ─── FLOAT WA ─── */
     .wa-float {
-      position: fixed; bottom: 28px; right: 28px; z-index: 200;
+      position: fixed; bottom: 28px; right: 28px; z-index: 90;
       width: 56px; height: 56px; border-radius: 50%;
       background: #25D366;
       display: flex; align-items: center; justify-content: center;
@@ -560,6 +699,21 @@
       transition: transform .2s, box-shadow .2s;
     }
     .wa-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,.55); }
+
+    /* ─── BOTÃO VOLTAR AO TOPO ─── */
+    .back-to-top {
+      position: fixed; bottom: 28px; left: 28px; z-index: 90;
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--verde); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      border: none; cursor: pointer;
+      box-shadow: 0 6px 24px rgba(107,79,160,.35);
+      opacity: 0; pointer-events: none;
+      transition: opacity .25s, transform .2s;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover { transform: scale(1.1); background: var(--verde-med); }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 900px) {
@@ -575,12 +729,16 @@
     @media (max-width: 640px) {
       nav { padding: 16px 5%; }
       .nav-links { display: none; }
+      .nav-cta { display: none; }
       .nav-hamburger { display: block; }
       .hero-stats { gap: 24px; }
       .stat-num { font-size: 1.5rem; }
       .footer-top { grid-template-columns: 1fr; gap: 32px; }
       .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
       .cta-box { padding: 36px 28px; }
+      .back-to-top, .wa-float { width: 48px; height: 48px; bottom: 20px; }
+      .back-to-top { left: 20px; }
+      .wa-float { right: 20px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -588,58 +746,60 @@
     }
 
     @media (max-width: 768px) {
-  #sobre {
-    display: flex;
-    flex-direction: column;
-    padding: 64px 5%;
-    gap: 32px;
-  }
+      #sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 64px 5%;
+        gap: 32px;
+      }
 
-  #sobre > div:first-child {
-    order: 1;
-  }
+      #sobre > div:first-child {
+        order: 1;
+      }
 
-  .sobre-image-side {
-    order: 2;
-    width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
+      .sobre-image-side {
+        order: 2;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
 
-  .sobre-img-box {
-    grid-column: 1 / -1;
-    padding-bottom: 80%;
-    border-radius: 28px;
-  }
+      .sobre-img-box {
+        grid-column: 1 / -1;
+        aspect-ratio: 5 / 4;
+        border-radius: 28px;
+      }
 
-  .sobre-card-float,
-  .lgbtq-badge {
-    position: static;
-    inset: auto;
-    transform: none;
-    width: 100%;
-    min-height: 96px;
-    border-radius: 18px;
-  }
+      .sobre-card-float,
+      .lgbtq-badge {
+        position: static;
+        inset: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        min-height: 96px;
+        border-radius: 18px;
+      }
 
-  .sobre-card-float {
-    padding: 18px 20px;
-  }
+      .sobre-card-float {
+        padding: 18px 20px;
+      }
 
-  .lgbtq-badge {
-    padding: 14px 16px;
-    justify-content: center;
-    text-align: left;
-  }
+      .lgbtq-badge {
+        padding: 14px 16px;
+        justify-content: center;
+        text-align: left;
+      }
 
-  .section-title {
-    font-size: 2.05rem;
-    line-height: 1.15;
-  }
-}
+      .section-title {
+        font-size: 2.05rem;
+        line-height: 1.15;
+      }
+    }
   </style>
 </head>
 <body>
@@ -657,11 +817,21 @@
     <li><a href="#equipe">Equipe</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
-  <a href="https://wa.me/5548999957471" target="_blank" rel="noopener" class="nav-cta">Agendar agora</a>
-  <button class="nav-hamburger" aria-label="Menu">
+  <a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="nav-cta">Agendar agora</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#equipe">Equipe</a>
+  <a href="#contato">Contato</a>
+  <a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="nav-cta">Agendar agora</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -680,7 +850,7 @@
       Clínica veterinária completa com atendimento clínico, cirúrgico e banho & tosa. Profissionais capacitados que tratam seu animal como família.
     </p>
     <div class="hero-btns">
-      <a href="https://wa.me/5548999957471" target="_blank" rel="noopener" class="btn-primary">
+      <a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="btn-primary">
         💬 Falar no WhatsApp
       </a>
       <a href="#servicos" class="btn-secondary">
@@ -871,7 +1041,7 @@
   </div>
 
   <div style="text-align:center; margin-top: 40px;">
-    <a href="https://www.google.com/maps/place/Cl%C3%ADnica+veterin%C3%A1ria+Pintas+e+Patas" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;">
+    <a href="https://maps.app.goo.gl/EXUxLpvYZo1xXQYq7" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;">
       Ver todas as 199 avaliações no Google →
     </a>
   </div>
@@ -906,6 +1076,23 @@
   </div>
 </section>
 
+<!-- REDES SOCIAIS -->
+<section id="social">
+  <p class="sobre-label">Siga a Pintas & Patas</p>
+  <h2 class="section-title">Acompanhe nosso<br><em>dia a dia</em></h2>
+  <div class="social-row">
+    <a href="https://www.instagram.com/cvpintasepatas/" target="_blank" rel="noopener" class="social-chip">
+      <span class="ic">📷</span> Instagram
+    </a>
+    <a href="https://www.tiktok.com/@pintasepatas" target="_blank" rel="noopener" class="social-chip">
+      <span class="ic">🎵</span> TikTok
+    </a>
+    <a href="https://www.youtube.com/channel/UCuUZlEySoenNKzlbTcosiHA" target="_blank" rel="noopener" class="social-chip">
+      <span class="ic">▶️</span> YouTube
+    </a>
+  </div>
+</section>
+
 <!-- CONTATO -->
 <section id="contato">
   <div class="section-header" style="text-align:left; max-width:100%;">
@@ -926,13 +1113,13 @@
       <div class="info-block">
         <div class="info-label">📞 Telefone / WhatsApp</div>
         <div class="info-value">
-          <a href="https://wa.me/5548999957471" target="_blank" rel="noopener">(48) 99995-7471</a>
+          <a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">(48) 99995-7471</a>
         </div>
       </div>
       <div class="info-block">
-        <div class="info-label">🔗 Todos os links</div>
+        <div class="info-label">📷 Instagram</div>
         <div class="info-value">
-          <a href="https://heylink.me/Pintasepatas/" target="_blank" rel="noopener">heylink.me/Pintasepatas</a>
+          <a href="https://www.instagram.com/cvpintasepatas/" target="_blank" rel="noopener">@cvpintasepatas</a>
         </div>
       </div>
       <div class="info-block">
@@ -959,12 +1146,12 @@
     <div class="cta-box">
       <h3 class="section-title">Agende agora<br><em>no WhatsApp</em></h3>
       <p>Consultas, banho & tosa, vacinas e muito mais. Resposta rápida, atendimento humanizado.</p>
-      <a href="https://wa.me/5548999957471" target="_blank" rel="noopener" class="whats-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="whats-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         Chamar no WhatsApp
       </a>
-      <a href="https://heylink.me/Pintasepatas/" target="_blank" rel="noopener" class="links-btn">
-        🔗 Ver todos os links
+      <a href="https://www.instagram.com/cvpintasepatas/" target="_blank" rel="noopener" class="links-btn">
+        📷 Seguir no Instagram
       </a>
     </div>
   </div>
@@ -972,13 +1159,16 @@
 
 <!-- MAPA -->
 <div id="mapa">
-  <div class="mapa-placeholder">
-    <span class="mapa-pin">📍</span>
-    <p class="mapa-address"><strong>Tv. Serafim Alves Pereira, 108 – Centro</strong><br>Sombrio – SC, 88960-000</p>
-    <a href="https://maps.google.com/?q=Tv.+Serafim+Alves+Pereira+108+Sombrio+SC" target="_blank" rel="noopener" class="mapa-link">
-      Abrir no Google Maps →
-    </a>
-  </div>
+  <iframe
+    src="https://www.google.com/maps?q=Tv.+Serafim+Alves+Pereira,+108,+Centro,+Sombrio+-+SC,+88960-000&output=embed"
+    title="Localização da Clínica Veterinária Pintas & Patas no mapa"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+  </iframe>
+  <a href="https://maps.app.goo.gl/EXUxLpvYZo1xXQYq7" target="_blank" rel="noopener" class="mapa-overlay-link">
+    📍 Abrir no Google Maps
+  </a>
 </div>
 
 <!-- FOOTER -->
@@ -1001,37 +1191,69 @@
     <div>
       <div class="footer-col-title">Contato</div>
       <ul class="footer-links">
-        <li><a href="https://wa.me/5548999957471" target="_blank" rel="noopener">📱 (48) 99995-7471</a></li>
-        <li><a href="https://heylink.me/Pintasepatas/" target="_blank" rel="noopener">🔗 Todos os links</a></li>
-        <li><a href="https://maps.google.com/?q=Tv.+Serafim+Alves+Pereira+108+Sombrio+SC" target="_blank" rel="noopener">📍 Como chegar</a></li>
+        <li><a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">📱 (48) 99995-7471</a></li>
+        <li><a href="https://www.instagram.com/cvpintasepatas/" target="_blank" rel="noopener">📷 Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@pintasepatas" target="_blank" rel="noopener">🎵 TikTok</a></li>
+        <li><a href="https://maps.app.goo.gl/EXUxLpvYZo1xXQYq7" target="_blank" rel="noopener">📍 Como chegar</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Clínica Veterinária Pintas & Patas · Todos os direitos reservados</span>
+    <span>© 2026 Clínica Veterinária Pintas & Patas · Todos os direitos reservados</span>
     <span>Feito com <span class="footer-heart">♥</span> para os animais de Sombrio</span>
   </div>
 </footer>
 
 <!-- FLOAT WA -->
-<a href="https://wa.me/5548999957471" target="_blank" rel="noopener" class="wa-float" title="Fale conosco no WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a href="https://wa.me/5548999957471?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" class="wa-float" title="Fale conosco no WhatsApp" aria-label="Falar no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
 <script>
   // Navbar scroll shadow
   const nav = document.getElementById('navbar');
+  const backToTop = document.getElementById('backToTop');
+
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 30);
+    backToTop.classList.toggle('visible', window.scrollY > 500);
   });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Menu mobile (drawer)
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  function toggleMenu(open) {
+    const isOpen = open !== undefined ? open : !mobileMenu.classList.contains('open');
+    mobileMenu.classList.toggle('open', isOpen);
+    menuOverlay.classList.toggle('open', isOpen);
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  hamburger.addEventListener('click', () => toggleMenu());
+  menuOverlay.addEventListener('click', () => toggleMenu(false));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
 
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const targetId = a.getAttribute('href');
+      if (targetId.length > 1) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     });
   });
@@ -1046,7 +1268,7 @@
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.svc-card, .review-card, .team-card, .info-block').forEach(el => {
+  document.querySelectorAll('.svc-card, .review-card, .team-card, .info-block, .social-chip').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity .5s ease, transform .5s ease';
